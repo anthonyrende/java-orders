@@ -24,6 +24,7 @@ public class Customers
     private String grade;
     private double openingamt;
     private double receiveamt;
+    private double paymentamt;
     private double outstandingamt;
     private String phone;
 
@@ -43,7 +44,7 @@ public class Customers
     {
     }
 
-    public Customers(String custname, String custcity, String workingarea, String custcountry, String grade, double openingamt, double receiveamt, double outstandingamt, String phone, Agents agents)
+    public Customers(String custname, String custcity, String workingarea, String custcountry, String grade, double openingamt, double receiveamt, double paymentamt, double outstandingamt, String phone, Agents agents)
     {
         this.custname = custname;
         this.custcity = custcity;
@@ -52,6 +53,7 @@ public class Customers
         this.grade = grade;
         this.openingamt = openingamt;
         this.receiveamt = receiveamt;
+        this.paymentamt = paymentamt;
         this.outstandingamt = outstandingamt;
         this.phone = phone;
         this.agents = agents;
@@ -104,6 +106,16 @@ public class Customers
     public void setCustcountry(String custcountry)
     {
         this.custcountry = custcountry;
+    }
+
+    public double getPaymentamt()
+    {
+        return paymentamt;
+    }
+
+    public void setPaymentamt(double paymentamt)
+    {
+        this.paymentamt = paymentamt;
     }
 
     public String getGrade()

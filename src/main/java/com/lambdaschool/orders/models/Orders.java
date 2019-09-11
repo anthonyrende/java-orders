@@ -22,15 +22,17 @@ public class Orders
     @JsonIgnoreProperties("orders")
     private Customers customers;
 
+    private String orrdescription;
+
     public Orders()
     {
     }
 
-    public Orders(double ordamount, double advanceamount, Customers customers)
-    {
+    public Orders(double ordamount, double advanceamount, Customers customers, String orrdescription) {
         this.ordamount = ordamount;
         this.advanceamount = advanceamount;
         this.customers = customers;
+        this.orrdescription = orrdescription;
     }
 
     public long getOrdnum()
@@ -73,4 +75,13 @@ public class Orders
         this.customers = customers;
     }
 
+    public String getOrrdescription()
+    {
+        return orrdescription;
+    }
+
+    public void setOrrdescription(String orrdescription)
+    {
+        this.orrdescription = orrdescription;
+    }
 }
