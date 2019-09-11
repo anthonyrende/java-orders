@@ -1,8 +1,7 @@
 package com.lambdaschool.orders;
 
-import com.lambdaschool.orders.model.Agents;
-import com.lambdaschool.orders.model.Customers;
-import com.lambdaschool.orders.model.Orders;
+import com.lambdaschool.orders.models.Agents;
+import com.lambdaschool.orders.models.Customers;
 import com.lambdaschool.orders.repos.AgentsRepository;
 import com.lambdaschool.orders.repos.CustomersRepository;
 import com.lambdaschool.orders.repos.OrdersRepository;

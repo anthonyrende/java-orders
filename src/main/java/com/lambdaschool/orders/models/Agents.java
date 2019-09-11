@@ -24,12 +24,12 @@ public class Agents
     private String phone;
     private String country;
 
-    @OneToMany(mappedBy = "agent",
+    @OneToMany(mappedBy = "agents",
                 cascade = CascadeType.ALL,
                 orphanRemoval = true)
-    @JsonIgnoreProperties("agent")
+    @JsonIgnoreProperties("agents")
     private List<Customers> customers = new ArrayList<>();
-
+//org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.lambdaschool.orders.models.Customers.agent in com.lambdaschool.orders.models.Agents.customers
     //default constructor
     public Agents()
     {
