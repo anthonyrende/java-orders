@@ -28,7 +28,7 @@ public class Agents
                 cascade = CascadeType.ALL,
                 orphanRemoval = true)
     @JsonIgnoreProperties("agent")
-    private List<Orders> orders = new ArrayList<>();
+    private List<Customers> customers = new ArrayList<>();
 
     //default constructor
     public Agents()
@@ -103,13 +103,13 @@ public class Agents
         this.country = country;
     }
 
-    public List<Orders> getOrders()
+    public List<Customers> getCustomers()
     {
-        return orders;
+        return customers;
     }
 
-    public void setOrders(List<Orders> orders)
+    public void setCustomers(List<Customers> customers)
     {
-        this.orders = orders;
+        this.customers = customers;
     }
 }
